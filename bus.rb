@@ -32,5 +32,10 @@ attr_accessor :passengers
         @passengers.clear
       end
 
+      def pick_up_from_stop(bus_stop)
+         @passengers += bus_stop.bus_queue
+         bus_stop.empty
+      end
+
 
 end
