@@ -1,8 +1,11 @@
-require("minitest/autorun")
-require("minitest/rg")
+class BusStop
 
-require_relative('../busstop.rb')
+  attr_reader :bus_stop_name
 
-class BusStopTest < MiniTest::Test
+  def initialize(bus_stop_name)
+    @bus_stop_name = bus_stop_name
+  end
+  
+
 
 end
